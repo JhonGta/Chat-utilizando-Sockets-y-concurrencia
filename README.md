@@ -48,6 +48,44 @@ Se debe clonar este repositorio o crearlo desde cero, y trabajar sobre las ramas
 
 ---
 
+## Instrucciones de Ejecución
+
+Para ejecutar este proyecto de chat en tiempo real en tu computadora, sigue estos pasos:
+
+1. **Clonar el repositorio**
+
+   Abre tu terminal y clona el repositorio base o el tuyo propio:
+
+   ```bash
+   git clone https://github.com/paulosk8/webChat.git
+
+2. **Entrar a la carpeta del proyecto**
+
+   ```bash
+   cd webChat
+
+3. **Instalar las dependencias**
+
+   Asegúrarse de tener instalado Node.js y npm. Luego, ejecutar:
+
+   ```bash
+   npm install
+
+4. **Ejecutar el servidor**
+
+   Correr el servidor con:
+
+   ```bash
+   npm start
+
+5. **Abrir la aplicación en el navegador**
+
+   Ir al navegador y abrir:
+
+   ```bash
+   http://localhost:3000
+   
+
 ## Capturas de Pantalla
 
 A continuación, se presentan algunas capturas del funcionamiento del chat en tiempo real utilizando Sockets y la interfaz basada en Bootstrap:
