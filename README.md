@@ -47,3 +47,19 @@ Se debe clonar este repositorio o crearlo desde cero, y trabajar sobre las ramas
   Mensajes desplegados en orden con formato amigable.  
 
 ---
+
+## Instrucciones de Ejecución
+
+Para ejecutar el proyecto localmente, sigue estos pasos:
+
+1. **Clonar el repositorio:**
+
+   ```bash
+   git clone https://github.com/paulosk8/webChat.git
+
+2. **Instalar dependencias**
+Asegúrarse de tener instalado Node.js en su equipo.
+Luego, ejecutar el siguiente comando para instalar las dependencias necesarias:
+
+```bash
+npm install
