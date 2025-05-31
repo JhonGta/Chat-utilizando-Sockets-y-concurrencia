@@ -82,4 +82,17 @@ Aquí se muestra el momento en que un segundo usuario se registra ingresando su 
 
 Finalmente, se observa cómo ambos usuarios interactúan en tiempo real dentro del chat. Los mensajes aparecen instantáneamente gracias a la implementación de Sockets, y el diseño con Bootstrap asegura una visualización clara y responsiva.
 
+## Conclusiones
+
+Durante el desarrollo del proyecto "Chat en Tiempo Real con Sockets", se aprendió cómo funcionan las conexiones en tiempo real usando WebSockets, lo que permite que varios usuarios puedan chatear simultáneamente sin problemas. 
+
+Además, se utilizó el framework Bootstrap para diseñar una interfaz limpia, moderna y fácil de usar, sin necesidad de crear estilos complejos desde cero. Bootstrap ayudó a que la aplicación se vea bien en diferentes dispositivos y a darle un estilo parecido a aplicaciones de mensajería conocidas.
+
+Algunas dificultades fueron ajustar el diseño para que no se distorsionara y hacer que el chat se pareciera a apps reales, pero con pruebas y usando bien las clases de Bootstrap, se logró un resultado bastante bueno.
+
+## Referencias
+
+- Repositorio base del proyecto proporcionado por el docente: [https://github.com/paulosk8/webChat/tree/main](https://github.com/paulosk8/webChat/tree/main)
+- Documentación oficial de Bootstrap 5: [https://getbootstrap.com/docs/5.3/getting-started/introduction/](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+- Tutoriales y ejemplos de Socket.IO y chats en tiempo real encontrados en internet.
 
