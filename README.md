@@ -48,18 +48,38 @@ Se debe clonar este repositorio o crearlo desde cero, y trabajar sobre las ramas
 
 ---
 
-## Instrucciones de Ejecución
+## Capturas de Pantalla
 
-Para ejecutar el proyecto localmente, sigue estos pasos:
+A continuación, se presentan algunas capturas del funcionamiento del chat en tiempo real utilizando Sockets y la interfaz basada en Bootstrap:
 
-1. **Clonar el repositorio:**
+### 1. Registro de Usuario
 
-   ```bash
-   git clone https://github.com/paulosk8/webChat.git
+![Registro de Usuario](https://i.imgur.com/WFqGqfB.png)
 
-2. **Instalar dependencias**
-Asegúrarse de tener instalado Node.js en su equipo.
-Luego, ejecutar el siguiente comando para instalar las dependencias necesarias:
+En esta imagen se muestra la pantalla de inicio donde el primer usuario ingresa su nombre para acceder al chat. El formulario ha sido diseñado utilizando componentes de Bootstrap para lograr una interfaz limpia y moderna.
 
-```bash
-npm install
+---
+
+### 2. Primer Usuario Enviando un Mensaje
+
+![Primer Mensaje](https://i.imgur.com/ETHHUFM.png)
+
+Una vez registrado, el primer usuario accede al entorno del chat y envía su primer mensaje: "Hola". La interfaz simula el estilo de redes sociales como Twitter, con elementos estilizados mediante Bootstrap.
+
+---
+
+### 3. Segundo Usuario Ingresando al Chat
+
+![Segundo Registro](https://i.imgur.com/pq2jjLx.png)
+
+Aquí se muestra el momento en que un segundo usuario se registra ingresando su nombre, utilizando la misma pantalla de inicio basada en Bootstrap.
+
+---
+
+### 4. Interacción en Tiempo Real
+
+![Interacción de Usuarios](https://i.imgur.com/7V7U21U.png)
+
+Finalmente, se observa cómo ambos usuarios interactúan en tiempo real dentro del chat. Los mensajes aparecen instantáneamente gracias a la implementación de Sockets, y el diseño con Bootstrap asegura una visualización clara y responsiva.
+
+
