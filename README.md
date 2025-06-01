@@ -8,43 +8,40 @@
 
 ## Introducción
 
-Este proyecto consiste en la creación de un chat en tiempo real utilizando sockets para permitir la comunicación instantánea entre usuarios.  
-El propósito es implementar un sistema interactivo y dinámico que permita enviar y recibir mensajes de manera eficiente.
-
-Para mejorar la interfaz de usuario, se utilizó el framework Bootstrap, logrando un diseño responsivo, moderno y limpio, similar a aplicaciones populares de mensajería, facilitando una mejor experiencia para los usuarios.
-
-El uso de sockets es fundamental en aplicaciones en tiempo real como chats, ya que permiten una comunicación bidireccional y persistente entre cliente y servidor, logrando una experiencia fluida e inmediata para los usuarios.
+Este proyecto consiste en la creación de un chat en tiempo real utilizando sockets para permitir la comunicación instantánea entre usuarios. Durante la práctica de laboratorio se le añadieron cinco nuevas funcionalidades que mejoraron la interacción entre los participantes: la selección de un avatar al registrarse, la visualización del avatar junto a cada mensaje enviado, la lista de usuarios conectados en tiempo real, un área en la interfaz que muestra el perfil del usuario activo (nombre y avatar), y un indicador que muestra cuándo otro usuario está escribiendo, además de notificaciones emergentes para nuevos mensajes. Estas mejoras se integraron manteniendo una estructura clara y moderna con el uso del framework Bootstrap, lo que permitió crear una experiencia visual más atractiva y funcional para el usuario.
 
 ---
 
 ## Repositorio Base
 
-El repositorio base proporcionado por el docente se encuentra en:  
-[https://github.com/paulosk8/webChat/tree/main](https://github.com/paulosk8/webChat/tree/main)  
+Este es el repositorio base del proyecto **Chat utilizando Sockets y concurrencia**, mantenido y gestionado por [JhonGta](https://github.com/JhonGta).
 
-Se debe clonar este repositorio o crearlo desde cero, y trabajar sobre las ramas existentes:  
+El desarrollo del proyecto se realiza en este repositorio propio, sin depender del repositorio proporcionado originalmente por el docente.
 
-- **Rama principal:** Código inicial.  
-- **Rama implementacion-chat:** Versión final del proyecto proporcionada como referencia.
+### Estructura de Ramas
+
+- **main:** Rama principal del proyecto, contiene la versión estable.
+- **feature-usuarios-conectados:** Rama de desarrollo donde se están implementando nuevas funcionalidades como la gestión de usuarios conectados.
 
 ---
-
 ## Implementación del Proyecto
 
 - **Estructura del código:**  
-  El proyecto está organizado en carpetas claras que separan la lógica del servidor, las rutas, los middlewares, los archivos públicos (CSS, JS, imágenes) y las vistas HTML.  
-  El servidor utiliza Socket.IO para manejar la comunicación en tiempo real entre los clientes y el servidor.  
-  Los eventos de envío y recepción de mensajes se gestionan mediante sockets, actualizando la interfaz del chat dinámicamente sin necesidad de recargar la página.
+  El proyecto está organizado en carpetas que separan la lógica del servidor, las rutas, los archivos públicos (CSS, JS, imágenes) y las vistas HTML.  
+  Se utiliza Socket.IO para manejar la comunicación en tiempo real entre clientes y servidor, permitiendo enviar y recibir mensajes al instante.  
+  Los eventos personalizados gestionan la conexión de usuarios, el envío de mensajes, la notificación cuando alguien está escribiendo, y la actualización dinámica de usuarios conectados.
 
 - **Mejoras en el diseño:**  
-  Se utilizó Bootstrap para darle un estilo moderno, responsivo y limpio a la interfaz del chat y del formulario de registro.  
-  Se mejoró la visualización de los mensajes, con un diseño similar a aplicaciones de mensajería reconocidas, cuidando los tamaños de los elementos y colores, para que la experiencia sea agradable y funcional.  
-  El encabezado y las secciones están estilizadas con colores personalizados y se mantiene una estructura coherente en todas las páginas.
+  Con el uso de Bootstrap se logró una interfaz limpia, moderna y responsiva.  
+  Se implementó un sistema visual para mostrar el nombre y avatar del usuario en la parte superior del chat.  
+  También se mejoró la presentación de los mensajes, mostrando el avatar del emisor junto a su contenido y una notificación tipo "toast" para avisar cuando llega un nuevo mensaje.
 
-- **Características adicionales:**  
-  Integración de avatar por defecto en los mensajes.  
-  Botón de envío funcional con eventos click.  
-  Mensajes desplegados en orden con formato amigable.  
+- **Nuevas funcionalidades agregadas:**  
+  - Selección y previsualización de avatar durante el registro.  
+  - Visualización del avatar del emisor en cada mensaje del chat.  
+  - Lista de usuarios conectados que se actualiza en tiempo real.  
+  - Visualización del perfil del usuario activo (nombre + avatar).  
+  - Indicador de "usuario escribiendo..." visible por otros usuarios.
 
 ---
 
@@ -57,7 +54,7 @@ Para ejecutar este proyecto de chat en tiempo real en tu computadora, sigue esto
    Abre tu terminal y clona el repositorio base o el tuyo propio:
 
    ```bash
-   git clone https://github.com/paulosk8/webChat.git
+git clone --branch feature-usuarios-conectados --single-branch https://github.com/JhonGta/Chat-utilizando-Sockets-y-concurrencia.git
 
 2. **Entrar a la carpeta del proyecto**
 
@@ -88,7 +85,7 @@ Para ejecutar este proyecto de chat en tiempo real en tu computadora, sigue esto
 
 ## Capturas de Pantalla
 
-A continuación, se presentan algunas capturas del funcionamiento del chat en tiempo real utilizando Sockets y la interfaz basada en Bootstrap:
+A continuación, se presentan algunas capturas del funcionamiento del chat en tiempo real mostrando las ultimas 5 funcionalidades que se aumentaron :
 
 ### 1. Registro de Usuario
 
