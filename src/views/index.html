@@ -12,32 +12,71 @@
 <body class="bg-light">
 
   <!-- Barra superior estilo WhatsApp -->
-  <nav class="navbar navbar-dark bg-success">
-    <div class="container-fluid">
-      <span class="navbar-brand mb-0 h1">Web Chat</span>
+ <nav class="navbar navbar-dark bg-success">
+  <div class="container-fluid justify-content-between">
+    <span class="navbar-brand mb-0 h1">Web Chat</span>
+    <div class="d-flex align-items-center text-white">
+      <img id="user-avatar" src="/img/perfil1.jpg" class="rounded-circle me-2" style="width: 40px; height: 40px;" />
+      <span id="user-name" class="fw-semibold"></span>
     </div>
-  </nav>
+  </div>
+</nav>
+
 
   <!-- Contenedor principal -->
-  <div class="container my-4">
-    <div class="card shadow-sm">
-      <!-- Área de mensajes -->
-      <div id="all-messages" class="card-body" style="height: 400px; overflow-y: auto;">
-        <!-- Mensajes se agregan dinámicamente -->
-      </div>
+<div class="container my-4">
+  <div class="row">
+    <!-- Columna izquierda: Chat -->
+    <div class="col-md-8">
+      <div class="card shadow-sm">
+        <!-- Área de mensajes -->
+        <div id="all-messages" class="card-body" style="height: 400px; overflow-y: auto;">
+          <!-- Mensajes se agregan dinámicamente -->
+        </div>
 
-      <!-- Área de envío de mensaje -->
-      <div class="card-footer bg-white">
-        <form class="d-flex gap-2">
-          <input type="text" id="message" class="form-control" placeholder="Escribe tu mensaje...">
-          <button type="button" id="send-message" class="btn btn-success">Enviar</button>
-        </form>
+        <!-- Área de envío de mensaje -->
+        <div class="card-footer bg-white">
+          <form class="d-flex gap-2">
+            <input type="text" id="message" class="form-control" placeholder="Escribe tu mensaje...">
+            <button type="button" id="send-message" class="btn btn-success">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Columna derecha: Usuarios conectados -->
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <div class="card-header bg-success text-white">
+          Usuarios conectados
+        </div>
+        <ul id="user-list" class="list-group list-group-flush">
+          <!-- Usuarios conectados se agregan aquí -->
+        </ul>
+      </div>
+    </div>
+
+
+    
+  </div>
+</div>
+ <!-- Toast container -->
+  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div id="toast-notification" class="toast align-items-center text-bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">
+          📨 Nuevo mensaje
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Cerrar"></button>
       </div>
     </div>
   </div>
 
+
+  <!-- Scripts -->
   <!-- Scripts -->
   <script src="/socket.io/socket.io.js"></script>
   <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
