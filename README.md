@@ -103,31 +103,44 @@ Se observa el entorno del chat una vez que el usuario ha iniciado sesión, donde
 
 ---
 
-### 3. Segundo Usuario Ingresando al Chat
+### 3. Registro de un nuevo usuario con selección de avatar 2
 
-![Segundo Registro](https://i.imgur.com/pq2jjLx.png)
+![Segundo Registro](https://i.imgur.com/FrhTZyK.png)
 
-Aquí se muestra el momento en que un segundo usuario se registra ingresando su nombre, utilizando la misma pantalla de inicio basada en Bootstrap.
+Registro de un segundo usuario, el cual elige un avatar diferente, demostrando que el sistema soporta múltiples sesiones con personalización única por usuario.
 
 ---
 
-### 4. Interacción en Tiempo Real
+### 4. Indicador “escribiendo...” en tiempo real entre usuarios
 
-![Interacción de Usuarios](https://i.imgur.com/7V7U21U.png)
+![Interacción de Usuarios](https://i.imgur.com/kuTFJQn.png)
 
-Finalmente, se observa cómo ambos usuarios interactúan en tiempo real dentro del chat. Los mensajes aparecen instantáneamente gracias a la implementación de Sockets, y el diseño con Bootstrap asegura una visualización clara y responsiva.
+Se muestran dos ventanas abiertas en simultáneo, donde al escribir en una de ellas se activa el indicador “escribiendo...” en la otra, confirmando la correcta implementación de la detección de escritura en tiempo real.
+
+---
+
+### 5. Recepción de mensajes y notificación de nuevo mensaje
+
+![Interacción de Usuarios](https://i.imgur.com/Ycrxpv0.png)
+
+En esta imagen se visualiza la recepción de un nuevo mensaje enviado por otro usuario, acompañado de una notificación tipo toast en la parte inferior derecha que alerta sobre la llegada del nuevo mensaje.
 
 ## Conclusiones
 
-Durante el desarrollo del proyecto "Chat en Tiempo Real con Sockets", se aprendió cómo funcionan las conexiones en tiempo real usando WebSockets, lo que permite que varios usuarios puedan chatear simultáneamente sin problemas. 
+- La adición de nuevas funcionalidades, como la selección y visualización de avatar, la notificación visual de nuevos mensajes, la lista dinámica de usuarios conectados y el indicador de usuario escribiendo, mejoró significativamente la experiencia de usuario, haciendo la aplicación más interactiva y cercana a los estándares de plataformas modernas de mensajería.
 
-Además, se utilizó el framework Bootstrap para diseñar una interfaz limpia, moderna y fácil de usar, sin necesidad de crear estilos complejos desde cero. Bootstrap ayudó a que la aplicación se vea bien en diferentes dispositivos y a darle un estilo parecido a aplicaciones de mensajería conocidas.
+- El uso de Socket.IO permitió implementar comunicación en tiempo real de manera eficiente y estable, mientras que el manejo de cookies facilitó la persistencia de datos como el nombre de usuario y su avatar. Estas herramientas, combinadas con una arquitectura clara y bien estructurada, permitieron el desarrollo de una aplicación funcional y escalable.
 
-Algunas dificultades fueron ajustar el diseño para que no se distorsionara y hacer que el chat se pareciera a apps reales, pero con pruebas y usando bien las clases de Bootstrap, se logró un resultado bastante bueno.
+- Bootstrap se utilizó estratégicamente para mantener una interfaz limpia, ordenada y completamente responsiva, lo que contribuyó a una experiencia de usuario coherente en diferentes dispositivos. La integración entre diseño y funcionalidad demostró la importancia de aplicar buenas prácticas tanto en frontend como en backend para lograr aplicaciones web completas.
 
 ## Referencias
 
-- Repositorio base del proyecto proporcionado por el docente: [https://github.com/paulosk8/webChat/tree/main](https://github.com/paulosk8/webChat/tree/main)
-- Documentación oficial de Bootstrap 5: [https://getbootstrap.com/docs/5.3/getting-started/introduction/](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+- Repositorio base del proyecto (mantenido por el autor):  
+  [https://github.com/JhonGta/Chat-utilizando-Sockets-y-concurrencia/tree/feature-usuarios-conectados](https://github.com/JhonGta/Chat-utilizando-Sockets-y-concurrencia/tree/feature-usuarios-conectados)
+
+- Documentación oficial de Bootstrap 5:  
+  [https://getbootstrap.com/docs/5.3/getting-started/introduction/](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+
 - Tutoriales y ejemplos de Socket.IO y chats en tiempo real encontrados en internet.
+
 
