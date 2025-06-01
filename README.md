@@ -87,19 +87,19 @@ Para ejecutar este proyecto de chat en tiempo real en tu computadora, sigue esto
 
 A continuación, se presentan algunas capturas del funcionamiento del chat en tiempo real mostrando las ultimas 5 funcionalidades que se aumentaron :
 
-### 1. Registro de Usuario
+### 1. Registro de usuario con selección y vista previa del avatar
 
-![Registro de Usuario](https://i.imgur.com/WFqGqfB.png)
+![Registro de usuario con selección y vista previa del avatar](https://i.imgur.com/s8WWsvg.png)
 
-En esta imagen se muestra la pantalla de inicio donde el primer usuario ingresa su nombre para acceder al chat. El formulario ha sido diseñado utilizando componentes de Bootstrap para lograr una interfaz limpia y moderna.
+Captura de pantalla de la interfaz donde se ve el formulario de registro, en el que el usuario ingresa su nombre, elige un avatar y lo visualiza antes de ingresar al chat.
 
 ---
 
-### 2. Primer Usuario Enviando un Mensaje
+### 2. Interfaz principal del chat con usuario conectado y perfil visible
 
-![Primer Mensaje](https://i.imgur.com/ETHHUFM.png)
+![Primer Mensaje](https://i.imgur.com/Is6aE2p.png)
 
-Una vez registrado, el primer usuario accede al entorno del chat y envía su primer mensaje: "Hola". La interfaz simula el estilo de redes sociales como Twitter, con elementos estilizados mediante Bootstrap.
+Se observa el entorno del chat una vez que el usuario ha iniciado sesión, donde aparece su nombre y avatar en la parte superior derecha. También se ve al usuario listado en la sección de “Usuarios conectados”.
 
 ---
 
