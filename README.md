@@ -54,7 +54,7 @@ Para ejecutar este proyecto de chat en tiempo real en tu computadora, sigue esto
    Abre tu terminal y clona el repositorio base o el tuyo propio:
 
    ```bash
-git clone --branch feature-usuarios-conectados --single-branch https://github.com/JhonGta/Chat-utilizando-Sockets-y-concurrencia.git
+   git clone --branch feature-usuarios-conectados --single-branch https://github.com/JhonGta/Chat-utilizando-Sockets-y-concurrencia.git
 
 2. **Entrar a la carpeta del proyecto**
 
